@@ -3,7 +3,7 @@ const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: "./src/js/index.js",
+    entry: "./src/index.js",
 
     output: {
         filename: "bundle.js",
@@ -24,7 +24,7 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: [["@babel/preset-env", {"targets": { "node": "current" }}]/*, "@babel/preset-react"*/],
+                        presets: [["@babel/preset-env", {"targets": { "node": "current" }}], "@babel/preset-react"],
                         plugins: ["@babel/plugin-proposal-class-properties"]
                     }
                 }

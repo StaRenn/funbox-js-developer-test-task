@@ -1,0 +1,5 @@
+export const NEW_ROUTE = "NEW_ROUTE";
+
+export const SET_NEW_ROUTES_ORDER = "SET_NEW_ROUTES_ORDER";
+
+export const DELETE_ROUTE = "DELETE_ROUTE";
