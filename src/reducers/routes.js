@@ -24,7 +24,7 @@ export default (userState = defaultState, action) => {
             return {...userState, order: List(payload.order)}
         }
         case DELETE_ROUTE: {
-            return {...userState, routes: userState.routes.remove(payload.id), order: userState.order.delete(userState.order.indexOf(payload.id))}
+            return {total: userState.total - 1, routes: userState.routes.remove(payload.id), order: userState.order.delete(userState.order.indexOf(payload.id))}
         }
     }
 
