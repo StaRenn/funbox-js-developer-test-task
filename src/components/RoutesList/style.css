@@ -3,9 +3,10 @@
   min-width: 280px;
   max-width: 100vw;
   position: absolute;
+  max-height: 40vh;
   right: 0;
   bottom: 0;
-  overflow: hidden;
+  overflow-y: auto;
   z-index: 1;
 }
 

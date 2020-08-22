@@ -1,8 +1,17 @@
-import {DELETE_ROUTE, NEW_ROUTE, REPLACE_ROUTE, SET_NEW_ROUTES_ORDER, START, SUCCESS} from "../constants";
+import {
+    DELETE_ROUTE, FAILED,
+    NEW_ROUTE, REMOVE_ERROR,
+    REPLACE_ROUTE,
+    SET_NEW_ROUTES_ORDER,
+    START,
+    SUCCESS,
+    YANDEX_MAP_LOADED
+} from "../constants";
 import {Map, List, Record} from "immutable";
 
 const UserState = Record({
-    loading: false,
+    loading: true,
+    error: null,
     center: [55.75, 37.57],
     total: 0,
     order: List([]),
@@ -25,6 +34,10 @@ export default (userState = defaultState, action) => {
                 .set("loading", false)
                 .set("center", payload.latitude)
         }
+        case NEW_ROUTE + FAILED: {
+            return userState.set("loading", false)
+                .set("error", payload.error)
+        }
         case SET_NEW_ROUTES_ORDER: {
             return userState.set("order", List(payload.order))
         }
@@ -35,6 +48,12 @@ export default (userState = defaultState, action) => {
         }
         case REPLACE_ROUTE + SUCCESS: {
             return userState.setIn(["routes", payload.id], {location: payload.location, latitude: payload.latitude})
+        }
+        case YANDEX_MAP_LOADED:{
+            return userState.set("loading", false)
+        }
+        case REMOVE_ERROR: {
+            return userState.set("error", null)
         }
     }
 
