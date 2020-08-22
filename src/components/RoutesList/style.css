@@ -1,23 +1,33 @@
 .routes-list-wrapper {
-  width: calc(20vw + 4px);
-  max-height: 40vh;
+  width: 20vw;
+  min-width: 280px;
+  max-width: 100vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .routes-list {
   padding: 0;
   margin: 0;
+  width: 100%;
+  word-wrap: break-word;
+  height: auto;
 }
 
 .routes-list__element__destination {
-  width: calc(20vw - 4vh);
+  width: 75%;
   height: 100%;
+  align-items: center;
   color: black;
+  display: block;
+  word-wrap: break-word;
   border: none;
   outline: none;
   background: none;
   padding: 0 1vh 0 1vh;
-  display: flex;
-  align-items: center;
   margin: 0;
 }
 
@@ -33,15 +43,20 @@
 }
 
 .routes-list__element {
+  position: relative;
+  box-sizing: border-box;
   background: white;
-  width: calc(20vw + 4px);
+  width: 100%;
   cursor: grab;
   display: flex;
-  height: calc(4vh + 4px);
+  align-items: center;
+  min-height: 40px;
+  height: auto;
   margin-top: -2px;
   border: 2px solid black;
   text-decoration: none;
   list-style-type: none;
+  z-index: 1;
 }
 .routes-list__element * {
   font-family: "Roboto", sans-serif;

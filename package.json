@@ -30,6 +30,7 @@
     "image-webpack-loader": "^6.0.0",
     "postcss-loader": "^3.0.0",
     "prop-types": "^15.7.2",
+    "react-app-polyfill": "^1.0.6",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
@@ -45,6 +46,7 @@
     "react-movable": "^2.5.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
+    "react-yandex-maps": "^4.4.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   }

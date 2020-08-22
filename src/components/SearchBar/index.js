@@ -7,20 +7,26 @@ function SearchBar() {
     const dispatch = useDispatch();
     const [searchQuery, setSearchQuery] = useState("");
 
-    const handleInput = (ev) => {
-        setSearchQuery(ev.target.value)
+    const handleKeyDown = (ev) => {
+        if(ev.key === "Enter"){
+            handleAddNewRoute();
+        }
     }
 
-    const handleClick = () => {
+    const handleInput = (ev) => {
+        setSearchQuery(ev.target.value);
+    }
+
+    const handleAddNewRoute = () => {
         if(searchQuery){
-            dispatch(addNewRoute(searchQuery))
+            dispatch(addNewRoute(searchQuery));
         }
     }
 
     return (
         <div className={"search-bar"}>
-            <input onChange={handleInput} value={searchQuery} className={"search-bar__input"}/>
-            <button onClick={handleClick} className={"search-bar__submit"}>+</button>
+            <input onKeyDown={handleKeyDown} onChange={handleInput} value={searchQuery} className={"search-bar__input"}/>
+            <button onClick={handleAddNewRoute} className={"action-button"}>+</button>
         </div>
     );
 }
