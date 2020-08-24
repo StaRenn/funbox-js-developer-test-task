@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render and be fully functional  should render and match snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <RoutesList>
+    <div
+      className="routes-list-wrapper"
+    >
+      <SearchBar>
+        <div
+          className="search-bar"
+        >
+          <input
+            className="search-bar__input"
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            value=""
+          />
+          <button
+            className="action-button"
+            onClick={[Function]}
+          >
+            +
+          </button>
+        </div>
+      </SearchBar>
+      <List
+        lockVertically={false}
+        onChange={[Function]}
+        removableByMove={false}
+        renderItem={[Function]}
+        renderList={[Function]}
+        transitionDuration={300}
+        values={
+          Array [
+            Object {
+              "id": "_abc",
+              "name": "route1",
+            },
+            Object {
+              "id": "_bca",
+              "name": undefined,
+            },
+          ]
+        }
+        voiceover={
+          Object {
+            "canceled": [Function],
+            "dropped": [Function],
+            "item": [Function],
+            "lifted": [Function],
+            "moved": [Function],
+          }
+        }
+      >
+        <ul
+          className="routes-list"
+        >
+          <li
+            aria-roledescription="You are currently at a draggable item at position 1. Press space bar to lift."
+            className="routes-list__element"
+            key="0"
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozUserSelect": "none",
+                "WebkitUserSelect": "none",
+                "boxSizing": "border-box",
+                "msUserSelect": "none",
+                "position": "relative",
+                "touchAction": "none",
+                "userSelect": "none",
+                "visibility": undefined,
+                "zIndex": 0,
+              }
+            }
+            tabIndex={0}
+          >
+            <p
+              className="routes-list__element__destination"
+            >
+              route1
+            </p>
+            <button
+              className="action-button"
+              onClick={[Function]}
+            >
+              -
+            </button>
+          </li>
+          <li
+            aria-roledescription="You are currently at a draggable item at position 2. Press space bar to lift."
+            className="routes-list__element"
+            key="1"
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "MozUserSelect": "none",
+                "WebkitUserSelect": "none",
+                "boxSizing": "border-box",
+                "msUserSelect": "none",
+                "position": "relative",
+                "touchAction": "none",
+                "userSelect": "none",
+                "visibility": undefined,
+                "zIndex": 0,
+              }
+            }
+            tabIndex={0}
+          >
+            <p
+              className="routes-list__element__destination"
+            />
+            <button
+              className="action-button"
+              onClick={[Function]}
+            >
+              -
+            </button>
+          </li>
+        </ul>
+        <div
+          aria-atomic="true"
+          aria-live="assertive"
+          role="log"
+          style={
+            Object {
+              "border": "0px",
+              "clip": "react(0px, 0px, 0px, 0px)",
+              "clipPath": "inset(100%)",
+              "height": "1px",
+              "margin": "-1px",
+              "overflow": "hidden",
+              "padding": "0px",
+              "position": "absolute",
+              "width": "1px",
+            }
+          }
+        />
+      </List>
+    </div>
+  </RoutesList>
+</Provider>
+`;

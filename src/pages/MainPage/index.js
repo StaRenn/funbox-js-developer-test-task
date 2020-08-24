@@ -1,16 +1,13 @@
 import React from 'react';
 import "./style.css"
 import RoutesList from "../../components/RoutesList";
-import YandexMapsContainer from "../../components/YandexMapsContainer";
-import {YMaps} from "react-yandex-maps";
+import YandexMaps from "../../components/YandexMaps";
 
 function MainPage() {
     return (
         <div className={"main-page-wrapper"}>
             <RoutesList />
-            <YMaps>
-                <YandexMapsContainer/>
-            </YMaps>
+            <YandexMaps/>
         </div>
     );
 }

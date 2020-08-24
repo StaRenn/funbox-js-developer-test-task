@@ -16,31 +16,13 @@
   max-height: 36px;
   cursor: pointer;
   outline: none;
-  font-size: 3rem;
+  font-size: 2rem !important;
   position: absolute;
   right: 0;
-}
-
-.modal-error {
-  position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 15px;
-  width: 400px;
-  max-width: 80vw;
-  background: white;
-  z-index: 1;
-  border-radius: 20px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: red;
-  font-size: 2rem;
-  font-weight: 700;
-  -webkit-animation: modal-fade 2.5s ease-in-out forwards;
-          animation: modal-fade 2.5s ease-in-out forwards;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @-webkit-keyframes modal-fade {
@@ -88,8 +70,8 @@ body {
   max-width: 100vw;
   position: absolute;
   max-height: 40vh;
-  right: 0;
-  bottom: 0;
+  left: 0;
+  top: 0;
   overflow-y: auto;
   z-index: 1;
 }

@@ -18,18 +18,19 @@ function RoutesList() {
     return (
         <div className={"routes-list-wrapper"}>
             <SearchBar/>
-            <List
+            <List //react-movable component documentation you can see here > github.com/tajo/react-movable
                 values={orderArr.map((id) => {
-                    return {id: id, location: routes.get(id).location}
+                    return {id: id, name: routes.get(id).name}
                 })}
                 onChange={({ oldIndex, newIndex }) => {
+                    //arrayMove returns new array with new order
                     dispatch(setNewRoutesOrder(arrayMove(orderArr, oldIndex, newIndex)))
                 }}
                 renderList={({ children, props }) => <ul className={"routes-list"} {...props}>{children}</ul>}
                 renderItem={({ value, props }) => {
                     return(
                         <li className={"routes-list__element"} {...props}>
-                            <p className={"routes-list__element__destination"}>{value.location}</p>
+                            <p className={"routes-list__element__destination"}>{value.name}</p>
                             <button className={"action-button"} onClick={handleDeleteRoute(value.id)}>-</button>
                         </li>)}
                 }

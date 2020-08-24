@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render MainPage 1`] = `
+<div
+  className="main-page-wrapper"
+>
+  <RoutesList />
+  <YandexMaps />
+</div>
+`;

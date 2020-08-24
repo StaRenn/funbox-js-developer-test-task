@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./style.css"
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {addNewRoute} from "../../AC";
 
 function SearchBar() {
@@ -18,7 +18,7 @@ function SearchBar() {
     }
 
     const handleAddNewRoute = () => {
-        if(searchQuery){
+        if(searchQuery.length > 0){
             dispatch(addNewRoute(searchQuery));
             setSearchQuery("");
         }
