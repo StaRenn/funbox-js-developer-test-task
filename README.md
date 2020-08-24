@@ -1,4 +1,4 @@
-# Test task for FrontEnd JS developer position in FunBox
+# Test task for FrontEnd JS developer position in FunBox https://dl.funbox.ru/qt-js.pdf
 
 ### You can test the app on http://vhost127076.cpsite.ru/, i had to deploy this project on free host, because starenn.github.io is busy with another project and i cant change its repo name at the moment.
 ---
