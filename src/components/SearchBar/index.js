@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./style.css"
+import "./style.sass";
 import {useDispatch} from "react-redux";
 import {addNewRoute} from "../../AC";
 

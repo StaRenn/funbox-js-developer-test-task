@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css"
+import "./style.sass";
 import RoutesList from "../../components/RoutesList";
 import YandexMaps from "../../components/YandexMaps";
 

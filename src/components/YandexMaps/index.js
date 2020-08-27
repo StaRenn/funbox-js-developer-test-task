@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Map, Placemark, Polyline, YMaps, ZoomControl} from "react-yandex-maps";
-import "./style.css"
+import "./style.sass";
 import {useDispatch, useSelector} from "react-redux";
 import {replaceRoute, setMapCenter, yandexMapsLoaded} from "../../AC";
 
